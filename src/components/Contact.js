@@ -6,7 +6,7 @@ const Contact = () => {
     <Navbar />
       <section className="hero-section">
         <p>Welcome to </p>
-        <h1>Thapa Technical Contact Page</h1>
+        <h1>Contact Page</h1>
       </section>
       </>
   )
