@@ -5,7 +5,7 @@ import "./button.css"
 import { NavLink } from 'react-router-dom';
 const Homepage = () => {
   return (
-    <>
+    <div className='home-background'>
     <Navbar />
     <section className="hero-section">
     <h1>Save the child</h1>
@@ -18,7 +18,7 @@ const Homepage = () => {
     </button>
      
   </section>
-  </>
+  </div>
   )
 }
 

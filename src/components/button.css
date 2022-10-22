@@ -1,13 +1,14 @@
 
 .button {
     border-radius: 1rem;
-    background-color: #f4511e;
+    background-color: #d1d7f1;
     border: none;
     color: #FFFFFF;
     text-align: center;
-    font-size: 2.8rem;
-    padding: 2rem;
-    width: 20rem;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    
+    width: 12rem;
     transition: all 0.5s;
     cursor: pointer;
     margin: 0.5rem;
@@ -24,13 +25,13 @@
     content: '\00bb';
     position: absolute;
     opacity: 0;
-    top: 0;
-    right: -20px;
+    top: 0rem;
+    right: -2rem;
     transition: 0.5s;
   }
   
   .button:hover span {
-    padding-right: 25px;
+    padding-right: 2rem;
   }
   
   .button:hover span:after {
