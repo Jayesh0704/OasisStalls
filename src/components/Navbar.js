@@ -14,17 +14,24 @@ const Navbar = () => {
   return (
     <>
     
-      <nav className="main-nav">
+    <nav className="main-nav">
         {/* 1st logo part  */}
         <div className="logo">
-          <h2>
-          <NavLink to="/">
-            <span>NSS </span>
-            <span>BITS P</span>ilani
-            </NavLink>
-           
-          </h2>
-        </div>
+        <div><img className="nssLogo" src="/images/512.png"/></div>
+        <div style={{ display: "flex", alignItems: "center", marginLeft: "0.2rem"}}>
+            <div className="nss">
+                NSS
+            </div>
+            <div style={{display: "flex", flexDirection: "column", marginLeft: "0.2rem"}}>
+                <div className="bits">
+                    BITS
+                </div>
+                <div className={"bits"}>
+                    PILANI
+                </div>
+            </div>
+        </div>                
+    </div>
 
         {/* 2nd menu part  */}
         <div
@@ -37,7 +44,7 @@ const Navbar = () => {
             </li>
           
             <li>
-              <NavLink to="/productpage">Product Page</NavLink>
+              <NavLink to="/productpage">Products</NavLink>
             </li>
             <li>
               <NavLink to="/contact">contact</NavLink>

@@ -1,9 +1,12 @@
-import React, { useState } from "react";
+import React, { useState,useEffect } from "react";
 import "./cart.css";
 import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
 import Navbar from "./Navbar";
 import Sidebar from "./Sidebar";
+import Fade from 'react-reveal/Fade';
+
+import sanityClient from "../client.js";
 
 const uniqueList = [
   ...new Set(
@@ -16,8 +19,26 @@ const uniqueList = [
 
 console.log(uniqueList);
 const Productpage = () => {
+  const [postData, setPost] = useState(null);
   const [menuData, setMenuData] = useState(Menu);
   const [menuList, setMenuList] = useState(uniqueList);
+  useEffect(() => {
+    sanityClient
+        .fetch(`*[_type == "post"]{
+            title,
+            category,
+            description,
+            mainImage{
+                asset->{
+                    _id,
+                    url
+                    },
+                    },
+                    }`)
+                    .then((data) => setPost(data))
+                    .catch(console.error);
+                    }, []);
+                 
   const filterItem = (category) => {
     if (category === "All") {
       setMenuData(Menu);
@@ -36,10 +57,15 @@ const Productpage = () => {
     
       <Navbar />
       <div className="parent-div">
+     
        <div className="sidebar-div">
-      <Sidebar filterItem={filterItem} menuList={menuList}/>
-      </div>
-      <MenuCard menuData={menuData} />  
+       <Fade left>
+        <Sidebar filterItem={filterItem} menuList={menuList}/>
+        </Fade>
+       </div>
+       <Fade bottom >
+       <MenuCard menuData={menuData} post={postData} />  
+       </Fade>
       </div>
     </>
   );

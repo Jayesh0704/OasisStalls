@@ -21,12 +21,15 @@ const Sidebar = ({ filterItem, menuList }) => {
         }
         </div>
       </nav>
-      <select className="dropdown">
+      <select className="dropdown" onChange={(e) => {
+        filterItem(e.target.value);
+      }}>
        {menuList.map((curElem) => {
         return (
           <option
             className="btn-group__item"
-            onClick={() => filterItem(curElem)}>
+            value={curElem}
+            >
             {curElem}
           </option>
         );

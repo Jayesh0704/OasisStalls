@@ -1,8 +1,9 @@
 import React from "react";
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css'
 import { BrowserRouter as Router,Routes, Route } from "react-router-dom";
 import Homepage from "./components/Homepage";
 import Productpage from "./components/Productpage";
-import Contact from "./components/Contact";
+import ContactForm from "./components/ContactForm";
 
 
 const App = () => {
@@ -11,7 +12,7 @@ const App = () => {
     <Routes>
       <Route path="/"  element={<Homepage />} />
       <Route path="/productpage"  element={<Productpage />} />
-      <Route path="/contact"  element={<Contact />} />
+      <Route path="/contact"  element={<ContactForm />} />
     </Routes>
     </Router>
   );
