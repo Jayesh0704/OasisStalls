@@ -1,5 +1,5 @@
 import React from "react";
-
+import { Select } from '@chakra-ui/react'
 import './Sidebar.css';
 
 
@@ -21,7 +21,8 @@ const Sidebar = ({ filterItem, menuList }) => {
         }
         </div>
       </nav>
-      <select className="dropdown" onChange={(e) => {
+      <div className="dropdown-div">
+      <Select   variant='filled' className="dropdown" onChange={(e) => {
         filterItem(e.target.value);
       }}>
        {menuList.map((curElem) => {
@@ -36,7 +37,8 @@ const Sidebar = ({ filterItem, menuList }) => {
         }
         )
       }
-           </select>
+           </Select>
+      </div>
     </>
   );
 };

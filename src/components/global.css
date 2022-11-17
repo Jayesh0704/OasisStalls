@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Times New Roman", Times, serif;
+  font-family: 'Poppins';
 }
 
 html {
@@ -44,16 +44,16 @@ li {
 
 
 
-.logo {
-  font-family: "Times New Roman";
-}
+
   .nss {
     font-size: 3rem;
+    font-family: 'TTimes New Roman', Times, serif;
     
   }
   .bits {
     font-size: 1rem;
     line-height: 125%;
+    font-family: 'TTimes New Roman', Times, serif;
   }
 
 
@@ -207,6 +207,9 @@ li {
 }
 .hero-section h2{
     color:white;
+   text-align: center;
+   padding: 2%;
+   line-height: 1.2em;
 }
 /* responsive css style  */
 @media (max-width: 1080px) {

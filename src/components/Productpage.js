@@ -2,9 +2,10 @@ import React, { useState,useEffect } from "react";
 import "./cart.css";
 import Menu from "./menuApi.js";
 import MenuCard from "./MenuCard";
-import Navbar from "./Navbar";
+import Topbar from "./Topbar";
 import Sidebar from "./Sidebar";
 import Fade from 'react-reveal/Fade';
+
 
 import sanityClient from "../client.js";
 
@@ -19,6 +20,8 @@ const uniqueList = [
 
 console.log(uniqueList);
 const Productpage = () => {
+
+
   const [postData, setPost] = useState(null);
   const [menuData, setMenuData] = useState(Menu);
   const [menuList, setMenuList] = useState(uniqueList);
@@ -55,7 +58,7 @@ const Productpage = () => {
   return (
     <>
     
-      <Navbar />
+      <Topbar />
       <div className="parent-div">
      
        <div className="sidebar-div">
@@ -63,9 +66,11 @@ const Productpage = () => {
         <Sidebar filterItem={filterItem} menuList={menuList}/>
         </Fade>
        </div>
+       <div style={{width: "100%"}}>
        <Fade bottom >
        <MenuCard menuData={menuData} post={postData} />  
        </Fade>
+       </div>
       </div>
     </>
   );

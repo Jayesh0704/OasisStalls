@@ -2,67 +2,322 @@ const Menu = [
   {
     
     image: "images/maggi.jpg",
-    name: "maggi",
-    category: "breakfast",
+    name: "Fancy Cassette Bags",
+    category: "Goonj",
     price: "12₹",
     },
-
-  {
+    {
     
-    image: "images/allupakoida.jpg",
-    name: "allu pakoida",
-    category: "evening",
-    price: "20₹",
-    },
-  {
+      image: "images/maggi.jpg",
+      name: "Lappy Bag",
+      category: "Goonj",
+      price: "12₹",
+      },
+      {
     
-    image: "images/corn.jpg",
-    name: "corn",
-    category: "breakfast",
-    price: "10₹",
-    },
+        image: "images/maggi.jpg",
+        name: "Wallet",
+        category: "Goonj",
+        price: "12₹",
+        },
+        {
+    
+          image: "images/maggi.jpg",
+          name: "Eco mat",
+          category: "Goonj",
+          price: "12₹",
+          },
+          {
+    
+            image: "images/maggi.jpg",
+            name: "Sister's Treasure Bag",
+            category: "Goonj",
+            price: "12₹",
+            },
+            {
+    
+              image: "images/maggi.jpg",
+              name: "Docket file",
+              category: "Goonj",
+              price: "12₹",
+              },
+              {
+    
+                image: "images/maggi.jpg",
+                name: "keyring",
+                category: "Goonj",
+                price: "12₹",
+                },
+                {
+    
+                  image: "images/maggi.jpg",
+                  name: "Sling bag",
+                  category: "Goonj",
+                  price: "12₹",
+                  },
+                  {
+    
+                    image: "images/maggi.jpg",
+                    name: "Travel bag",
+                    category: "Goonj",
+                    price: "12₹",
+                    },
+                    {
+    
+                      image: "images/allupakoida.jpg",
+                      name: "Bag 4",
+                      category: "Setu Jaipur",
+                      price: "12₹",
+                      },
+                      {
+    
+                        image: "images/allupakoida.jpg",
+                        name: "Coin Bag ",
+                        category: "Setu Jaipur",
+                        price: "12₹",
+                        },
+                        {
+    
+                          image: "images/allupakoida.jpg",
+                          name: "Wallet",
+                          category: "Setu Jaipur",
+                          price: "12₹",
+                          },
+                          {
+    
+                            image: "images/allupakoida.jpg",
+                            name: "Basket 1 ",
+                            category: "Setu Jaipur",
+                            price: "12₹",
+                            },
+                            {
+    
+                              image: "images/allupakoida.jpg",
+                              name: "Basket 2",
+                              category: "Setu Jaipur",
+                              price: "12₹",
+                              },
+                              {
+    
+                                image: "images/allupakoida.jpg",
+                                name: "Basket 3",
+                                category: "Setu Jaipur",
+                                price: "12₹",
+                                },
+                                {
+    
+                                  image: "images/allupakoida.jpg",
+                                  name: "Bone earings",
+                                  category: "Setu Jaipur",
+                                  price: "12₹",
+                                  },
+                                  {
+    
+                                    image: "images/allupakoida.jpg",
+                                    name: "Cups bracelet",
+                                    category: "Setu Jaipur",
+                                    price: "12₹",
+                                    },
+                                    {
+    
+                                      image: "images/allupakoida.jpg",
+                                      name: "Necklace",
+                                      category: "Setu Jaipur",
+                                      price: "12₹",
+                                      },
+                                      {
+    
+                                        image: "images/allupakoida.jpg",
+                                        name: "Jewellery",
+                                        category: "Setu Jaipur",
+                                        price: "12₹",
+                                        },
+                                        {
+    
+                                          image: "images/allupakoida.jpg",
+                                          name: "Crochet stole 3",
+                                          category: "Setu Jaipur",
+                                          price: "12₹",
+                                          },
+                                          {
+    
+                                            image: "images/allupakoida.jpg",
+                                            name: "Crochet stole 4",
+                                            category: "Setu Jaipur",
+                                            price: "12₹",
+                                            },
+                                            {
+    
+                                              image: "images/allupakoida.jpg",
+                                              name: "Crochet stole 5",
+                                              category: "Setu Jaipur",
+                                              price: "12₹",
+                                              },
+                                              {
+    
+                                                image: "images/allupakoida.jpg",
+                                                name: "Crochet stole 6",
+                                                category: "Setu Jaipur",
+                                                price: "12₹",
+                                                },
+  
   {
     
     image: "../images/chola.jpg",
-    name: "chola",
-    category: "lunch",
+    name: "Himalayan Calendar (Wall)",
+    category: "WWF",
     price: "50₹",
     },
+    {
+    
+      image: "../images/chola.jpg",
+      name: "Tiger Calendar (Wall)",
+      category: "WWF",
+      price: "50₹",
+      },
+      {
+    
+        image: "../images/chola.jpg",
+        name: "Species Eco Notebook",
+        category: "WWF",
+        price: "50₹",
+        },
+        {
+    
+          image: "../images/chola.jpg",
+          name: "Watercolour Diary",
+          category: "WWF",
+          price: "50₹",
+          },
+          {
+    
+            image: "../images/chola.jpg",
+            name: "Enchanted Forest diary",
+            category: "WWF",
+            price: "50₹",
+            },
+            {
+    
+              image: "../images/chola.jpg",
+              name: "Eco Hard Back Diary",
+              category: "WWF",
+              price: "50₹",
+              },
+              {
+    
+                image: "../images/chola.jpg",
+                name: "Eco Hard Cover Diary",
+                category: "WWF",
+                price: "50₹",
+                },
+                {
+    
+                  image: "../images/chola.jpg",
+                  name: "Pencils",
+                  category: "WWF",
+                  price: "50₹",
+                  },
+                  {
+    
+                    image: "../images/chola.jpg",
+                    name: "Bird Pins",
+                    category: "WWF",
+                    price: "50₹",
+                    },
+                    {
+    
+                      image: "../images/chola.jpg",
+                      name: "Pencils",
+                      category: "WWF",
+                      price: "50₹",
+                      },
+                      {
+    
+                        image: "../images/chola.jpg",
+                        name: "Animal Pins",
+                        category: "WWF",
+                        price: "50₹",
+                        },
+                        {
+    
+                          image: "../images/chola.jpg",
+                          name: "Tie (100% silk)",
+                          category: "WWF",
+                          price: "50₹",
+                          },
+                          {
+    
+                            image: "../images/chola.jpg",
+                            name: "Scarves (100% Silk)",
+                            category: "WWF",
+                            price: "50₹",
+                            },
+                            {
+    
+                              image: "../images/chola.jpg",
+                              name: "Panda Toy",
+                              category: "WWF",
+                              price: "50₹",
+                              },
+                              {
+    
+                                image: "../images/chola.jpg",
+                                name: "Bamboo Speaker",
+                                category: "WWF",
+                                price: "50₹",
+                                },
   {
     
     image: "../images/pizza.jpg",
     name: "pizza",
-    category: "evening",
+    category: "Amroha",
     price: "80₹",
     },
-  {
+    {
     
-    image: "../images/nonvegthali.jpg",
-    name: "Non-Veg Thali",
-    category: "dinner",
-    price: "180₹",
-    },
-  {
+      image: "../images/pizza.jpg",
+      name: "Sling Bags",
+      category: "Amroha",
+      price: "80₹",
+      },{
     
-    image: "../images/sweet.jpg",
-    name: "Sweets",
-    category: "dinner",
-    price: "60₹",
-    },
-  {
+        image: "../images/pizza.jpg",
+        name: "laptop Bags",
+        category: "Amroha",
+        price: "80₹",
+        },{
     
-    image: "../images/rajmarice.jpg",
-    name: "Rajma Rice",
-    category: "lunch",
-    price: "60₹",
-    },
-  {
+          image: "../images/pizza.jpg",
+          name: "Wall mounted lanscapes",
+          category: "Amroha",
+          price: "80₹",
+          },{
     
-    image: "../images/samosa.jpg",
-    name: "samaso",
-    category: "evening",
-    price: "10₹",
-    },
+            image: "../images/pizza.jpg",
+            name: "Hand bags",
+            category: "Amroha",
+            price: "80₹",
+            },{
+    
+              image: "../images/pizza.jpg",
+              name: "Room Carpets",
+              category: "Amroha",
+              price: "80₹",
+              },{
+    
+                image: "../images/pizza.jpg",
+                name: "Home Decors(Large)",
+                category: "Amroha",
+                price: "80₹",
+                },
+                {
+    
+                  image: "../images/pizza.jpg",
+                  name: "Home Decors(small)",
+                  category: "Amroha",
+                  price: "80₹",
+                  },
+  
 ];
 
 export default Menu;

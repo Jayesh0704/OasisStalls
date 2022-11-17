@@ -27,8 +27,7 @@
     display: grid;
     grid-template-columns: repeat(5, minmax(20rem, 25rem));
     grid-gap: .4rem;
-    
- 
+  
   }
   
   
@@ -74,7 +73,7 @@
     font-family: "Cormorant Garamond", serif;
     font-size: 2vh;
     font-weight: 1000;
-    line-height: 2rem;
+    line-height: 1em;
     margin: .2rem 0;
     text-align: center;
     text-transform: uppercase;
@@ -118,13 +117,13 @@
     .main-card--cointainer {
       display: grid;
       grid-template-columns: repeat(4, minmax(20rem, 50rem));
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       justify-content: space-around;
     }
     .card {
       padding: 1rem;
       border-radius: 1rem;
-      width: 70%;
+      width: 80%;
       height: 80%;
     }
   }
@@ -132,14 +131,14 @@
     .main-card--cointainer {
       display: grid;
       grid-template-columns: repeat(3, minmax(20rem, 50rem));
-      grid-gap: 2rem;
+      grid-gap: 1rem;
       justify-content: space-around;
     }
     .card {
       padding: 1rem;
       border-radius: 1rem;
-      width: 15vw;
-      height: 230px;
+      width: 80%;
+      height: 80%;
     }
   }
 
@@ -179,17 +178,15 @@
   .main-card--cointainer {
     display: flex;
     flex-direction: column;
-    margin-left: 10rem;
     grid-gap: .1rem;
-  
   }
   .card {
     padding: 1rem;
     border-radius: 1rem;
     width: 90%;
     height: 50%;
-    margin-top: 30%;
-    margin-left: 2%;
+   
+    margin-left: 5%;
    
   }
 }

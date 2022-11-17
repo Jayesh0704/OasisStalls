@@ -9,30 +9,32 @@
     .menu-item{
         display:none;
     }
-
-    .dropdown {
-      
+ 
+   
+    .dropdown{
         display:block;
-        position: absolute;
-        margin-top: 0.5rem;
+        position: relative;
+        margin-top:2rem;
         text-align: center;
-        padding: .5rem;
-        border-radius: 1rem;
-        width: 100vw;
-        height:6vh;
-        overflow: hidden;
-       
-        transition: height .4s ease;
-        background-color: #fff;
+        width:100%;
+        min-width:0px;
+        
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-        transition: all 0.3s ease-in-out;
-        text-transform: capitalize;
-        font-size: 1.5rem;
-        font-weight: 400;
-        color: #000;
      
         cursor: pointer;
         z-index: 1;
-
+     
     }
+    /* .dropdown-div{
+        width:100%;
+        
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background: #fff;
+        box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
+        z-index: 1;
+
+
+    } */
 }
