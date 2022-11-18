@@ -5,6 +5,7 @@
   "dependencies": {
     "@chakra-ui/react": "^2.4.1",
     "@coreui/react": "^4.4.0",
+    "@emailjs/browser": "^3.9.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@popperjs/core": "^2.11.6",
@@ -23,6 +24,7 @@
     "react-dom": "^18.2.0",
     "react-dropdown": "^1.11.0",
     "react-icons": "^4.4.0",
+    "react-mailto": "^0.4.0",
     "react-pro-sidebar": "^1.0.0-alpha.6",
     "react-reveal": "^1.2.2",
     "react-router-dom": "^6.4.2",

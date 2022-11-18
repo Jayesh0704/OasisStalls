@@ -9,13 +9,13 @@ import Fade from 'react-reveal/Fade';
 
 import sanityClient from "../client.js";
 
-const uniqueList = [
+const uniqueList = ["All",
   ...new Set(
     Menu.map((curElem) => {
       return curElem.category;
     })
   ),
-  "All",
+  
 ];
 
 console.log(uniqueList);
@@ -25,22 +25,22 @@ const Productpage = () => {
   const [postData, setPost] = useState(null);
   const [menuData, setMenuData] = useState(Menu);
   const [menuList, setMenuList] = useState(uniqueList);
-  useEffect(() => {
-    sanityClient
-        .fetch(`*[_type == "post"]{
-            title,
-            category,
-            description,
-            mainImage{
-                asset->{
-                    _id,
-                    url
-                    },
-                    },
-                    }`)
-                    .then((data) => setPost(data))
-                    .catch(console.error);
-                    }, []);
+  // useEffect(() => {
+  //   sanityClient
+  //       .fetch(`*[_type == "post"]{
+  //           title,
+  //           category,
+  //           description,
+  //           mainImage{
+  //               asset->{
+  //                   _id,
+  //                   url
+  //                   },
+  //                   },
+  //                   }`)
+  //                   .then((data) => setPost(data))
+  //                   .catch(console.error);
+  //                   }, []);
                  
   const filterItem = (category) => {
     if (category === "All") {
@@ -66,7 +66,7 @@ const Productpage = () => {
         <Sidebar filterItem={filterItem} menuList={menuList}/>
         </Fade>
        </div>
-       <div style={{width: "100%"}}>
+       <div style={{width: "100%", paddingRight:"3%"}}>
        <Fade bottom >
        <MenuCard menuData={menuData} post={postData} />  
        </Fade>

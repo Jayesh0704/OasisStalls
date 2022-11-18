@@ -1,15 +1,8 @@
 import React,{useState} from "react";
 import Button from 'react-bootstrap/Button';
 import { useDisclosure,Text } from '@chakra-ui/react'
-import {
-  Modal,
-  ModalOverlay,
-  ModalContent,
-  ModalHeader,
-  ModalFooter,
-  ModalBody,
-  ModalCloseButton,
-} from '@chakra-ui/react'
+import Cardcomponent from "./Cardcomponent";
+
 // <Button onClick={handleShow}>
 // Show more
 // </Button>
@@ -33,6 +26,9 @@ const MenuCard = ({ menuData,postData }) => {
      console.log(menuData);
     console.log(postData);
     const { isOpen, onOpen, onClose } = useDisclosure()
+
+
+  
     const [show, setShow] = useState(false);
 
 
@@ -43,44 +39,10 @@ const MenuCard = ({ menuData,postData }) => {
       <section className="main-card--cointainer">
         {menuData.map((curElem) => {
           const { id, name, category, image, description } = curElem;
-
           return (
             <>
-              <div className="card-container" key={id}>
-                <div className="card ">
-                  <div className="card-body">
-                    <span className="card-number card-circle subtle">{id}</span>
-                  
-                    <h2 className="card-title"> {name} </h2>
-                    
-                  </div>
-                  <img src={image} alt="images" className="card-media" />
-                 
-                  <span className="card-tag  subtle" onClick={onOpen}>Order Now</span>
-                  <Modal blockScrollOnMount={false} isOpen={isOpen} onClose={onClose}>
-        <ModalOverlay />
-        <ModalContent>
-          <ModalHeader>Modal Title</ModalHeader>
-          <ModalCloseButton />
-          <ModalBody>
-            <Text fontWeight='bold' mb='1rem'>
-              "You can scroll the content behind the modal"
-            </Text>
-          </ModalBody>
-
-          <ModalFooter>
-            <Button colorScheme='blue' mr={3} onClick={onClose}>
-              "Close"
-            </Button>
-            <Button variant='ghost'>"Secondary Action"</Button>
-          </ModalFooter>
-        </ModalContent>
-      </Modal>
-                 
-    
-                  
-                </div>
-              </div>
+            <Cardcomponent curElem={curElem}/>
+             
             </>
           );
         })}

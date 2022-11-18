@@ -13,14 +13,13 @@
    
     .dropdown{
         display:block;
-        position: relative;
         margin-top:2rem;
         text-align: center;
         width:100%;
         min-width:0px;
         
         box-shadow: 0 0 1rem rgba(0, 0, 0, 0.2);
-     
+        
         cursor: pointer;
         z-index: 1;
      

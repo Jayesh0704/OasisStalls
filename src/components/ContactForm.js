@@ -1,19 +1,34 @@
-import React from 'react'
+import React, { useRef } from 'react'
 import Topbar from "./Topbar";
 import classes from "./Contacts.css";
-const ContactForm = () => {
-  const [formStatus, setFormStatus] = React.useState('Send')
-  const onSubmit = (e) => {
-    e.preventDefault()
-    setFormStatus('Submitting...')
-    const { name, email, message } = e.target.elements
-    let conFom = {
-      name: name.value,
-      email: email.value,
-      message: message.value,
+import emailjs from '@emailjs/browser';
+import validator from 'validator';
+const required = (value) => {
+    if (!value.toString().trim().length) {
+      // We can return string or jsx as the 'error' prop for the validated Component
+      return 'require';
     }
-    console.log(conFom)
-  }
+  };
+   
+  const email = (value) => {
+    if (!validator.isEmail(value)) {
+      return `${value} is not a valid email.`
+    }
+  };
+  
+const ContactForm = () => {
+    const form = useRef();
+
+    const sendEmail = (e) => {
+      e.preventDefault();
+  
+      emailjs.sendForm('service_cxwkq47', 'template_mupmcs8', form.current, 'Liw2w8rPjgfSodMH7')
+        .then((result) => {
+            console.log(result.text);
+        }, (error) => {
+            console.log(error.text);
+        });
+    };
   return (
     <>
     <Topbar />
@@ -68,7 +83,7 @@ const ContactForm = () => {
             </div>
             <div className="col-12 col-md mt-5">
                 <div className="undefined contactForm">
-                    <form action="#">
+                    <form ref={form} onSubmit={sendEmail} id="formid">
                         <h2>Leave us a feedback</h2>
                         <div>
                             <label className="row" for="name">
@@ -76,11 +91,8 @@ const ContactForm = () => {
                                     Name
                                 </div>
                             </label>
-                            
-                          
-                          
                         <div>
-                        <input class="row ml-0" type="text" id="name" name="name" placeholder="James Bond" value/>
+                        <input  required validations={[required]} class="row ml-0" type="text" id="name" name="user_name" placeholder="Jayesh" />
                         </div>
                         </div>
                         <div>
@@ -91,7 +103,7 @@ const ContactForm = () => {
                             </label>
                        
                         <div>
-                        <input class="row ml-0" type="text" id="email" name="email" placeholder="abc@xyz.com" value=""/>
+                        <input required validations={[required, email]} class="row ml-0" type="email" id="email" name="user_email" placeholder="abc@xyz.com"></input>
                             
                           </div>
                         </div>
@@ -100,11 +112,16 @@ const ContactForm = () => {
                         <div class="undefined inputHead">Message</div>
                         </label>
                         <div>
-                            <textarea className="row ml-0" id="message" name = "message"
+                            <textarea required validations={[required]} className="row ml-0" id="message" name = "message"
                                 rows="4" cols="50" placeholder="Hey there, I wanted to say hi and that..."/>
                         </div>
                         </div>
-                        <button className="button" style={{marginTop:"1rem"}}>Send message</button>
+                        <button className="button" type="submit" value="send" onclick={() => {
+                            document.getElementById("name").innerHTML = "";
+                            document.getElementById("email").value = "";
+                            document.getElementById("message").value = "";
+                        }}  style={{marginTop:"1rem"}}>Send message</button>
+                        
                     </form>
                 </div>
             </div>

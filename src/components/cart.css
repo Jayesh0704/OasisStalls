@@ -156,38 +156,45 @@
       border-radius: 1rem;
       width: 80%;
       height: 80%;
-      margin-left: 10%;
+      margin:10% 10%;
     }
+    .parent-div{
+      display: flex;
+      flex-direction: column; 
+    }
+
 }
 @media (max-width: 768px) {
   
   .main-card--cointainer {
     display: grid;
     grid-template-columns: repeat(2, minmax(20rem, 50rem));
-    grid-gap: 3rem;
-    margin:auto;
+    grid-gap: .5rem;
+    
   }
   .card {
     padding: 1rem;
     border-radius: 1rem;
     width: 80%;
     height: 74%;
+    margin:10% 10%;
   }
+  
 }
 @media (max-width: 500px) {
   .main-card--cointainer {
     display: flex;
     flex-direction: column;
-    grid-gap: .1rem;
+    
   }
   .card {
     padding: 1rem;
     border-radius: 1rem;
-    width: 90%;
+    width: 80%;
     height: 50%;
    
-    margin-left: 5%;
-   
+    
+   margin:5% 10%;
   }
 }
 

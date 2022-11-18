@@ -1,28 +1,28 @@
 const Menu = [
   {
     
-    image: "images/maggi.jpg",
+    image: "images/Goonj_Fancy Cassette.png",
     name: "Fancy Cassette Bags",
     category: "Goonj",
     price: "12₹",
     },
     {
     
-      image: "images/maggi.jpg",
+      image: "images/Goonj_lappy Bag.png",
       name: "Lappy Bag",
       category: "Goonj",
       price: "12₹",
       },
       {
     
-        image: "images/maggi.jpg",
+        image: "images/Goonj_Handy Purse_35.png",
         name: "Wallet",
         category: "Goonj",
         price: "12₹",
         },
         {
     
-          image: "images/maggi.jpg",
+          image: "images/Goonj_Eco Mat_2_3.png",
           name: "Eco mat",
           category: "Goonj",
           price: "12₹",

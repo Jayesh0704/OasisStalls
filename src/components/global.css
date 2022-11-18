@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins';
+  
 }
 
 html {
@@ -46,12 +47,12 @@ li {
 
 
   .nss {
-    font-size: 3rem;
+    font-size: 3.2rem;
     font-family: 'TTimes New Roman', Times, serif;
     
   }
   .bits {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 125%;
     font-family: 'TTimes New Roman', Times, serif;
   }
@@ -210,6 +211,7 @@ li {
    text-align: center;
    padding: 2%;
    line-height: 1.2em;
+   font-size: 2.2rem;
 }
 /* responsive css style  */
 @media (max-width: 1080px) {
