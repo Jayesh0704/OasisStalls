@@ -44,8 +44,8 @@ const Cardcomponent = ({curElem}) => {
          <img src={curElem.image} alt="images" className="card-media" />
          </div>
          <div style={{display:"block",fontFamily:"poppins",padding:"5%",fontSize:"1.4rem"}}>
-         <div >Price: 30</div>
-         <div>Quantity remaining:10</div>
+         <div >Price: {curElem.price}</div>
+         <div>Quantity remaining:{curElem.quantityleft}</div>
          </div>
          </div>
         </ModalBody>

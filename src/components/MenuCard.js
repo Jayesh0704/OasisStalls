@@ -38,7 +38,7 @@ const MenuCard = ({ menuData,postData }) => {
     <>
       <section className="main-card--cointainer">
         {menuData.map((curElem) => {
-          const { id, name, category, image, description } = curElem;
+          const { id, name, category, image, description,price,quantityleft } = curElem;
           return (
             <>
             <Cardcomponent curElem={curElem}/>
