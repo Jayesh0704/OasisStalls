@@ -3,6 +3,7 @@ import Topbar from "./Topbar";
 import classes from "./Contacts.css";
 import emailjs from '@emailjs/browser';
 import validator from 'validator';
+import Background from './Background';
 const required = (value) => {
     if (!value.toString().trim().length) {
       // We can return string or jsx as the 'error' prop for the validated Component
@@ -31,7 +32,9 @@ const ContactForm = () => {
     };
   return (
     <>
+   
     <Topbar />
+   <Background/>
     <React.Fragment>
     <div className={`${classes.contactBody} contactBody container-fluid`}>
       

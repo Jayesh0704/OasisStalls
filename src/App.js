@@ -5,6 +5,7 @@ import Homepage from "./components/Homepage";
 import Productpage from "./components/Productpage";
 import ContactForm from "./components/ContactForm";
 
+import Developer from './components/Developer';
 
 const App = () => {
   return (
@@ -13,6 +14,8 @@ const App = () => {
       <Route path="/"  element={<Homepage />} />
       <Route path="/productpage"  element={<Productpage />} />
       <Route path="/contactForm"  element={<ContactForm />} />
+      <Route path="/developer"  element={<Developer />} />
+   
     </Routes>
     </Router>
   );

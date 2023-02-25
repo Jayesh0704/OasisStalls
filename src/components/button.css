@@ -1,13 +1,13 @@
 
-.button {
+/* .button {
     border-radius: 1rem;
-    background-color: #d1d7f1;
+    background-color:#c59613;
     border: none;
     color: #FFFFFF;
     text-align: center;
     font-size: 1.5rem;
     padding: 0.8rem;
-    
+    text-transform: uppercase;
     width: 18rem;
     transition: all 0.5s;
     cursor: pointer;
@@ -16,13 +16,13 @@
   
   .button span {
     cursor: pointer;
-    display: inline-block;
+    
     position: relative;
     transition: 0.5s;
   }
   
   .button span:after {
-    content: '\00bb';
+   
     position: absolute;
     opacity: 0;
     top: 0rem;
@@ -37,4 +37,32 @@
   .button:hover span:after {
     opacity: 1;
     right: 0;
+  } */
+  .button {
+    border-radius: 1rem;
+    background-color: #c59613;
+    border: none;
+    color: #FFFFFF;
+    text-align: center;
+    font-size: 1.5rem;
+    padding: 0.8rem;
+    text-transform: uppercase;
+    width: 18rem;
+    transition: all 0.5s;
+    cursor: pointer;
+    margin: 0.5rem;
   }
+  
+  .button span {
+    cursor: pointer;
+    position: relative;
+    transition: 0.5s;
+  }
+
+  
+.button:hover {
+  transform: translateY(-0.2rem);
+  box-shadow: 0 0.2rem 0.4rem rgba(0, 0, 0, 0.3);
+
+}
+

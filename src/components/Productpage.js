@@ -5,7 +5,7 @@ import MenuCard from "./MenuCard";
 import Topbar from "./Topbar";
 import Sidebar from "./Sidebar";
 import Fade from 'react-reveal/Fade';
-
+import Background from "./Background";
 
 import sanityClient from "../client.js";
 
@@ -57,10 +57,11 @@ const Productpage = () => {
   };
   return (
     <>
-    
+   
       <Topbar />
+   
       <div className="parent-div">
-     
+   
        <div className="sidebar-div">
        <Fade left>
         <Sidebar filterItem={filterItem} menuList={menuList}/>
